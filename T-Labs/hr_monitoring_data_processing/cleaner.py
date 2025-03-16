@@ -11,7 +11,7 @@ def filter_nondigits(data: list) -> list:
         list: A list of strings of type int elements.          
     """    
     
-    clean_list = []  # Initialize empty list to store permissible elements.
+    clean_list = []  # define and Initialize empty list to store permissible elements.
     for element in data:  # Iterate over list of strings.
         # remove any \n, \t, " ", etc.., from string(s).
         clean_element = element.strip()
