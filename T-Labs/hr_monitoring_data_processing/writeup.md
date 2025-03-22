@@ -2,7 +2,9 @@
 
 Take a look at the file labeled `data/phase0.txt`. Why might we have missing values or values that state "NO DATA" in this dataset? While we are currently ignoring these values, what might be the risk of filtering these values out?
 
-[Answer here]
+Missing data can result from various factors. Person may take off the sensor, I know that network issues can cause downtime as well (wifi, bluetooth, etc...), and system errors with device. 
+
+The risk of filtering may hide some valuable information about device, skewed results, etc...
 
 ## Question 2
 
