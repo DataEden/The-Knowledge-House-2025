@@ -30,7 +30,7 @@ def run(filename: str) -> None:
     clean_data = filter_nondigits(data)
     
 
-    # plot this data to explore changes in heart rate for this file, save this visualization to the "images" folder
+    # plot this data to explore changes in heart rate for visualization to the "images" folder
     plt.plot(clean_data)
     plt.xlabel("Time")
     plt.ylabel("Heart Rate")
@@ -39,7 +39,7 @@ def run(filename: str) -> None:
     plt.savefig("images/hr_data.png")
     plt.close()
     
-    # calculate the average, maximum, and standard deviation of this file using the functions you've wrote
+    # calculate the average, maximum, and standard deviation functions 
     avg_hr = round(average(clean_data), 2)
     max_hr = round(maximum(clean_data), 2)
     std_dev_hr = round(standard_deviation(clean_data), 2)
@@ -49,4 +49,4 @@ def run(filename: str) -> None:
 
 
 if __name__ == "__main__":
-    print(run("data/phase2.txt"))
+    print(run("data/phase0.txt"))

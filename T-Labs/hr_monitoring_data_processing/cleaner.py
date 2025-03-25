@@ -20,6 +20,6 @@ def filter_nondigits(data: list) -> list:
         clean_element = val.strip()
         # Check if element is a digit.        
         if clean_element.isdigit():  
-            clean_list.append(int(val))  # Convert string to permissible element  and append list.
+            clean_list.append(int(val))  # Convert string to permissible element and append list.
     return clean_list  # Return list of permissible elements.
     
