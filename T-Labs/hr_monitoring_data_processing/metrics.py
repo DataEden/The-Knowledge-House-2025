@@ -38,17 +38,17 @@ def average(data: list) -> float: # Define function header for average() functio
         return []
 
     # Calculate sum of population in list
-    pop_sum = 0
+    sum_pop = 0
     for data_val in data: # Iterate over each element in list
-        pop_sum += data_val # Add each element to sum
+        sum_pop += data_val # Add each element to sum
 
     # Calculate number of population in list
     num_pop = 0
     for data_val in data: # Iterate over each element in list
         num_pop += 1
+    sample_mean = sum_pop / num_pop # Calculate average of list
     
-        sample_mean = pop_sum / num_pop # Calculate average of list
-    return sample_mean   
+    return sample_mean  
 
 
 def maximum(data: list) -> float: # Define function header for maximum() function.
