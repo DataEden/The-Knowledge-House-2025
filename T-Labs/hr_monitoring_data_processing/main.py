@@ -33,7 +33,7 @@ def run(filename: str) -> None:
     # plot this data to explore changes in heart rate for visualization to the "images" folder
     plt.plot(clean_data)
     plt.xlabel("Time")
-    plt.ylabel("Heart Rate")
+    plt.ylabel("Heart beat / rate")
     plt.title("Heart Rate Data")
 
     plt.savefig("images/hr_data.png")
@@ -49,4 +49,4 @@ def run(filename: str) -> None:
 
 
 if __name__ == "__main__":
-    print(run("data/phase0.txt"))
+    print(run("data/phase1.txt"))
