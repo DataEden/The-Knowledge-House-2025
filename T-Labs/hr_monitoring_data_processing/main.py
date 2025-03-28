@@ -31,7 +31,7 @@ def run(filename: str) -> None:
     clean_data = filter_nondigits(data)
 
 
-    # plot this data to explore changes in heart rate for visualization to the "images" folder.
+    # plot data to explore changes in heart rate for visualization to the "images" folder.
     plt.plot(clean_data)
     plt.xlabel("Time")
     plt.ylabel("Heart beat / rate")
