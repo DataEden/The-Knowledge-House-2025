@@ -8,7 +8,7 @@ def filter_nondigits(data: list) -> list:
         data (list): A list of strings elements.
 
     Returns:
-        list: A list of strings of type int elements.          
+        list: A list of strings containing type-int elements.          
     """    
     
     if not data:
