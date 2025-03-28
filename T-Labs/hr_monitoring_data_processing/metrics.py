@@ -7,7 +7,7 @@ hr_monitoring_data_processing module to analyze heart rate data.
 
 Functions:
     average(data: list) -> float:
-    maximum(data: list) -> float:
+    maximum(data: list) -> int:
     variance(data: list) -> float:
     standard_deviation(data: list) -> float:
 
@@ -83,27 +83,27 @@ def variance(data: list) -> float: # Define function header for variance() funct
         float: The variance, or 0 if the list is empty.
     """
     if not data:
-        return []  # Return empty list[]
+        return []  # Returns empty list[]
 
-    n = len(data)  # Get the number of elements
+    n = len(data)  # Gets the number of elements
 
     # Compute mean manually
     mean = 0
     for value in data:
         mean += value
-    mean /= n  # Divide by n to get the mean
+    mean /= n  # Divides by n to get the mean
 
-    # Compute variance manually
+    # Computes variance manually
     var_sum = 0
     for value in data:
         var_sum += (value - mean) ** 2  # Squaring each difference
 
-    variance = var_sum / n  # Divide to obtain population variance
+    variance = var_sum / n  # Divides to obtain population variance
 
-    return variance # Return calculated variance to calling function(s)
+    return variance # Returns calculated variance to calling function(s)
 
 
-def standard_deviation(data: list) -> float:  # Define function header for standard_deviation() function.
+def standard_deviation(data: list) -> float:  # Defines function header for standard_deviation() function.
     """
     Calculates the population standard deviation using variance function.
 
@@ -111,10 +111,10 @@ def standard_deviation(data: list) -> float:  # Define function header for stand
         data (list): A list of numbers.
 
     Returns:
-        float: The standard deviation rounded to 2 decimal places.
+        float: The standard deviation.
     """
     if not data:
-        return [] # Return empty list if no data in data list
+        return [] # Returns empty list if no data in data list.
     
-    return variance(data)**0.5  # Return the square root of the variance / Standard deviation
+    return variance(data)**0.5  # Returns square root of variance / Standard deviation.
     
