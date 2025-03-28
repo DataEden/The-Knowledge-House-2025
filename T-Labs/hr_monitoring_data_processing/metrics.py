@@ -19,7 +19,7 @@ def average(data: list) -> float: # Define function header for average() functio
 
     Function computes arithmetic mean of a list of integers or floats
     without using built-in functions like sum() or len(). If list is empty,
-    it returns 0 to avoid division by zero errors.
+    it returns [] to avoid division by zero errors.
 
     Args:
         data (list[int | float]): A list of integers or floats representing numerical data.
