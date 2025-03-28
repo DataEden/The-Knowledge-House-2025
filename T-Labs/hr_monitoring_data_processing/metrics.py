@@ -94,11 +94,11 @@ def variance(data: list) -> float: # Define function header for variance() funct
     mean /= n  # Divide by n to get the mean.
 
     # Manually Compute variance.
-    var_sum = 0
+    sum_sq_diff = 0
     for value in data:
-        var_sum += (value - mean) ** 2  # Squaring each difference.
+        sum_sq_diff += (value - mean) ** 2  # Squaring each difference.
 
-    variance = var_sum / n  # DivideK to obtain population variance.
+    variance = sum_sq_diff / n  # Divide to obtain population variance.
 
     return variance # Return calculated variance to calling function(s).
 
