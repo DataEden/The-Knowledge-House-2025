@@ -83,27 +83,27 @@ def variance(data: list) -> float: # Define function header for variance() funct
         float: The variance, or 0 if the list is empty.
     """
     if not data:
-        return []  # Returns empty list[]
+        return []  # Return empty list[].
 
-    n = len(data)  # Gets the number of elements
+    n = len(data)  # Get the number of elements.
 
-    # Compute mean manually
+    # Manually compute mean value.
     mean = 0
     for value in data:
         mean += value
-    mean /= n  # Divides by n to get the mean
+    mean /= n  # Divide by n to get the mean.
 
-    # Computes variance manually
+    # Manually Compute variance.
     var_sum = 0
     for value in data:
-        var_sum += (value - mean) ** 2  # Squaring each difference
+        var_sum += (value - mean) ** 2  # Squaring each difference.
 
-    variance = var_sum / n  # Divides to obtain population variance
+    variance = var_sum / n  # Divide to obtain population variance.
 
-    return variance # Returns calculated variance to calling function(s)
+    return variance # Return calculated variance to calling function(s).
 
 
-def standard_deviation(data: list) -> float:  # Defines function header for standard_deviation() function.
+def standard_deviation(data: list) -> float:  # Define function header for standard_deviation() function.
     """
     Calculates the population standard deviation using variance function.
 
@@ -114,7 +114,7 @@ def standard_deviation(data: list) -> float:  # Defines function header for stan
         float: The standard deviation.
     """
     if not data:
-        return [] # Returns empty list if no data in data list.
+        return [] # Return empty list if no data in data list.
     
-    return variance(data)**0.5  # Returns square root of variance / Standard deviation.
+    return variance(data)**0.5  # Return square root of variance / Standard deviation.
     
