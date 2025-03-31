@@ -51,7 +51,7 @@ def run(filename: str) -> None:
 
     # Display output to the screen.
 if __name__ == "__main__":
-    print(run("data/phase3.txt"))
+    print(run("data/phase2.txt"))
     
 
 
