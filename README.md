@@ -1,4 +1,7 @@
-![TKH Banner](assets/banner.png)
+<p align="center">
+  <img src="assets/banner.png" alt="The Knowledge House 2025 Banner" width="90%">
+</p>
+
 # The Knowledge House 2025 Innovative Fellowship
 
 Welcome to my GitHub repository for **The Knowledge House 2025 Data Science Innovative Fellowship**! I am honored to be part of **Cohort A** in the **Data Science Track** and will use this space to document my journey over the 9-month program through hands-on projects, data pipelines, and analytical problem-solving.
