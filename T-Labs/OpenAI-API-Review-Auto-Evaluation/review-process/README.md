@@ -73,9 +73,9 @@ You should see your terminal output `SUCCESS!`.
 These instructions have been based off of documentation from the [OpenAI API](https://platform.openai.com/docs/libraries?desktop-os=windows&language=python). 
 
 There are three Python files and one markdown file which you will modify in this repository to complete this project:
-* cleaner.py
-* metrics.py
+* label.py
 * main.py
+* visualize.py
 * writeup.md
 
 The files with the prefix test_ (i.e. test_package.py, test_label.py, test_visualize.py, and test_run.py) are intended for you to test your code to ensure that all project requirements are complete. Do not modify the code in these files. Otherwise, you will not be able to check that your code is functioning correctly.
