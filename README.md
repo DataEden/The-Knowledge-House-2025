@@ -84,8 +84,8 @@ I was recently accepted into The Knowledge House's highly selective Innovative F
 ## 🤝 Connect with Me
 
 - 🌐 [Portfolio Website](#)
-- 💼 [LinkedIn](#)
-- 📫 [Email](mailto:your-email@example.com)
+- 💼 [LinkedIn](linkedin.[com]/[in]/[fari-lindo])
+- 📫 [Email](datainsidedata[@]gmail.[com])
 
 ---
 
