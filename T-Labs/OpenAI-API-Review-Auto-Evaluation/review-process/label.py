@@ -1,12 +1,10 @@
 from openai import OpenAI
-import json
 
 def get_sentiment(text: list) -> list:
     """
     INSERT DOCSTRING HERE
     """
     # Check if the input is a list of strings
-    # Validate the input
     if not isinstance(text, list) or not all(isinstance(item, str) for item in text):
         return "Wrong input. text must be an array of strings."
     # Check if the list is empty
@@ -15,8 +13,6 @@ def get_sentiment(text: list) -> list:
     
     client = OpenAI()
 
-    #reviews = json.loads(text)
-    
     system_prompt = f"""
     For each line of text in the string below, please categorize the review
     as either positive, neutral, negative, or irrelevant.
