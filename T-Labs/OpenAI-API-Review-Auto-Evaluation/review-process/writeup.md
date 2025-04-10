@@ -2,13 +2,13 @@
 
 What is the most common sentiment observed in your sample of 50 reviews according to your OpenAI labeled data?
 
-[Answer here]
+According to the labeled data, Negative sentiment/feedback was most commonly observed in the sample of 50 reviews. 
 
 ## Question 2
 
 How reliable do you believe these labels are? Look at the respective labels OpenAI has generated for specific reviews, does it seem like the large language model accurately described the user's review? What risk do model hallucinations introduce into this analysis?
 
-[Answer here]
+
 
 ## Question 3
 
