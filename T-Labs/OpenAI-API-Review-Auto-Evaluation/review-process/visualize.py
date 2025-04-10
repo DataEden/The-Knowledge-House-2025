@@ -3,7 +3,9 @@ import matplotlib.pyplot as plt
 
 def make_plot(sentiments: list) -> None:
     """
-    The make_plot() function takes a list of sentiment labels.
+    This function visualizes the sentiment distribution of a list of sentiments.
+
+    It counts the occurrences of each sentiment label and creates a bar chart.
      
       Args:
         sentiments (list): A list of sentiment labels (e.g., "positive", "neutral", "negative", "irrelevant").
