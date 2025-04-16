@@ -37,12 +37,13 @@ def get_sentiment(text: list) -> list:
     # The system prompt sets the context for the model, and the user prompt provides the input data.
     system_prompt = (
         "You are an expert sentiment classifier. For each review:\n"
-        "- Classify it as one of: positive, neutral, negative, or irrelevant.\n"
+        "- Classify eeach review with one of these labels: positive, neutral, negative, or irrelevant.\n"
         "- Return only one label per line.\n"
+        "- Never Split the review into multiple lines.\n"
         "- Do NOT include numbering, punctuation, brackets, or extra formatting.\n"
         "- Be sensitive to emotional tone, sarcasm, irony, or context.\n"
-        "- Watch for transitions like 'but', 'however', or 'overall'.\n"
-        "- Always base your label on the full review, not just the start.\n"
+        "- Watch for transitions like 'but', 'however', or 'overall', as these may indicate a negative sentiment.\n"
+        "- Always base your label on the full review, not just a portion.\n"
     )
 
     user_prompt = (
