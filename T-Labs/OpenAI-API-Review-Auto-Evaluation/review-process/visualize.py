@@ -54,7 +54,7 @@ def make_plot(sentiments: list) -> None:
 
     # Plot bar chart
     plt.figure(figsize=(8, 6))
-    plt.bar(sentiment_order, values, color="#1f77b4", alpha=0.7)
+    plt.bar(sentiment_order, values, color="#1f77b4", alpha=0.8)
     plt.title("Sentiment Distribution")
     plt.xlabel("Sentiment")
     plt.ylabel("Count")
