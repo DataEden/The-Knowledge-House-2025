@@ -26,11 +26,19 @@ def run(filepath: str):
     #if not reviews:
         #return []
 
-    # extract reviews from the json file
+    # extract reviews from the json file.
     reviews = data_file.get("results", [])
    
-    # get a list of sentiments for each line using get_sentiment
+    # get a list of sentiments for each line using get_sentiment.
     sentiments = get_sentiment(reviews)
+    
+    # Guarantee number of sentiment labels matches the number of reviews.
+    # If API returned extra lines (e.g., hallucinated responses), truncate them.
+    #sentiments = sentiments[:len(reviews)]
+
+    # Prints number of reviews and sentiments returned.
+    #print(f" Number of reviews: {len(reviews)}")
+    #print(f" Number of sentiments returned: {len(sentiments)}")
 
     # Pair each review with its sentiment
     paired_output = list(zip(reviews, sentiments))
@@ -38,7 +46,7 @@ def run(filepath: str):
     # Print them cleanly
     print("\n Review + Sentiment Pairs:\n")
     for i, (review, sentiment) in enumerate(paired_output, 1):
-        print(f"{i:02d}. [{sentiment.upper()}] {review[0:]}{'...' if len(review) > 200 else ''}")
+        print(f"{i:02d}. [{sentiment.upper()}] {review[:100]}{'...' if len(review) > 100 else ''}")
     
     # plot a visualization expressing sentiment ratio
     make_plot(sentiments)
