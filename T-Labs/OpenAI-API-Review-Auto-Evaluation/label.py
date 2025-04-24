@@ -15,7 +15,7 @@ def get_sentiment(text: list) -> list:
     """
     # Check if input is a list of strings
     if not isinstance(text, list) or not all(isinstance(item, str) for item in text):
-        return "Wrong input. text must be an array of strings."
+        return "Wrong input. text must be list array of strings."
     
     # Check if input is empty or contains non-string elements
     if not text:
@@ -37,7 +37,7 @@ def get_sentiment(text: list) -> list:
     # The system prompt sets the context for the model, and the user prompt provides the input data.
     system_prompt = (
         "You are an expert sentiment classifier. For each review:\n"
-        "- Classify eeach review with one of these labels: positive, neutral, negative, or irrelevant.\n"
+        "- Classify each review with one of these labels: positive, neutral, negative, or irrelevant.\n"
         "- Return only one label per line.\n"
         "- Never Split the review into multiple lines.\n"
         "- Do NOT include numbering, punctuation, brackets, or extra formatting.\n"
