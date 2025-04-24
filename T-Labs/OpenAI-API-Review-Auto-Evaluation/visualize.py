@@ -29,16 +29,16 @@ def make_plot(sentiments: list) -> None:
     #    if sentiment in counts:
     #        counts[sentiment] += 1
     
-    # Use Counter to count occurrences of each sentiment label
+    # Use Counter to count occurrences of each sentiment label.
     valid_labels = {"positive", "neutral", "negative", "irrelevant"}
     # Normalize the sentiments to lowercase and strip whitespace
     normalized_sentiments = [s.strip().lower() for s in sentiments if s.strip().lower() in valid_labels]
 
     #normalized_sentiments = [s.strip().lower() for s in sentiments]
-
+    # Create a Counter object to count occurrences of each sentiment label.
     counts = Counter(normalized_sentiments)
 
-    # Ensure all sentiment labels are present in the counts dictionary
+    # Ensure all sentiment labels are present in the counts dictionary.
     for sentiment_labels in ["positive", "neutral", "negative", "irrelevant"]:
         if sentiment_labels not in counts: 
             counts[sentiment_labels] = 0
@@ -53,13 +53,14 @@ def make_plot(sentiments: list) -> None:
     #values = list(counts.values())
 
     # Plot bar chart
-    plt.figure(figsize=(8, 6))
+    plt.figure(figsize=(7, 5))
     plt.bar(sentiment_order, values, color="#1f77b4", alpha=0.8)
     plt.title("Sentiment Distribution")
     plt.xlabel("Sentiment")
     plt.ylabel("Count")
     plt.tight_layout()
-
+   
+    
     # If folder doesn't exist create and save
     # os.makedirs("images", exist_ok=True)
     plt.savefig("images/sentiment_plot.png")
