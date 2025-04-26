@@ -91,7 +91,7 @@ Create visualizations and metrics to answer the following questions:
 * Perform the same bivariate analysis between the mentioned weather columns (temp_avg, hum_min, rain_max, and wind_avg) and a coffee-related column of your choice (bearing_trees, nonbearing_trees, bearing_trees_per_hectare, etc). Which directions do these relationships follow? What are the strengths of these relationships?
 * Which weather factor seems to influence coffee production the most? 
 * Which data would you collect to continue exploring the impacts of weather and economic forces on coffee production?
-* If you were preparing a report to provide coffee farmers, which weather condititions would you state are the most favorable for coffee growing (assuming any exist)?
+* If you were preparing a report to provide to coffee farmers, which weather condititions would you state are the most favorable for coffee growing (assuming any exist)?
 
 ## Submission 
 
