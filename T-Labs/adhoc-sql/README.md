@@ -1,6 +1,6 @@
 # Instagram Ad-hoc Analysis
 
-You are a data analyst at an NYC-based wholesale food supplier called Osiris-Foods. As part of your companies mission to make more data-driven decisions, you are tasked with generating an ad-hoc report on your companies database. You will report on descriptive statistics using SQL and generate respective visualizations using pandas to provide your company an overview of its' past performance.
+You are a data analyst at a NYC-based wholesale food supplier called Osiris-Foods. As part of your companies mission to make more data-driven decisions, you are tasked with generating an ad-hoc report on your companies database. You will report on descriptive statistics using SQL and generate respective visualizations using pandas to provide your company an overview of its' past performance.
 
 For this project, you will analyze an ERD diagram to formulate DML SQL queries within a Jupyter notebook, and provide a write-up of your findings. 
 
@@ -12,7 +12,7 @@ Keep in mind that your write-up should include pertinent numerical details to ba
 
 Before beginning your project, we recommend checking out the ERD diagram below:
 
-![ERD Diagram](/images/Northwind_E-R_Diagram.png)  
+[ERD Diagram](/images/Northwind_E-R_Diagram.png)  
 *ERD Diagram of Market Database*
 
 Use this ERD diagram to formulate how you should form your joins across tables and to find out more about your table's columns.
