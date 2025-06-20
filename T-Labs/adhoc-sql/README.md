@@ -12,7 +12,7 @@ Keep in mind that your write-up should include pertinent numerical details to ba
 
 Before beginning your project, we recommend checking out the ERD diagram below:
 
-[ERD Diagram](/images/Northwind_E-R_Diagram.png)  
+![ERD Diagram](/images/Northwind_E-R_Diagram.png)  
 *ERD Diagram of Market Database*
 
 Use this ERD diagram to formulate how you should form your joins across tables and to find out more about your table's columns.
